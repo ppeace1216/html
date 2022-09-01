@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 연습02 - 목록</title>
+</head>
+<body>
+    <section class="wrap">
+        <h2>비순서 목록</h2>
+        <ul>
+            <li>김
+                <ul>
+                    <li>한국
+                        <ul>
+                            <li>1위</li>
+                            <li>2위</li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>이</li>
+            <li>박</li>
+            <li>최</li>
+        </ul>
+    </section>
+    <div class="wrap">
+        <h2>순서형 목록</h2>
+        <ol>
+            <li>고기</li>
+            <li>피자</li>
+            <li>치킨</li>
+            <li>분식</li>
+        </ol>
+    </div>
+    <div class="wrap">
+        <h2>나열형 목록</h2>
+        <dl>
+            <dt>사계절</dt>
+            <dd>봄</dd>
+            <dd>여름</dd>
+            <dd>가을</dd>
+            <dd>겨울</dd>
+        </dl>
+    </div>
+    <div class="wrap">
+        <h2>선택형 목록</h2>
+        <select name="sel" id="sel">
+            <option value="">선택안함</option>
+            <option value="http://www.google.com">구글</option>
+            <option value="http://www.naver.com">네이버</option>
+            <option value="http://www.daum.net">카카오</option>
+        </select>
+    </div>
+    <div class="wrap">
+        <h2>펼침형 목록</h2>
+        <details>
+            <summary>자세히 보지마</summary>
+            <div>
+                배고파용<br>
+                집가서 돼지불고기 먹어야지<br>
+                공부 열심히 하자
+            </div>
+        </details>
+    </div>
+    <div class="wrap">
+        <h2>데이터 입력형 목록</h2>
+        <form>
+            과목 : <input type="text" name="dept"
+            list="deptlist"><br><br>
+            <datalist id="deptlist">
+                <option value="응용"></option>
+                <option value="개발자"></option>
+                <option value="프로그래밍"></option>
+                <option value="SQL"></option>
+            </datalist>
+        </form>
+    </div>
+</body>
+</html>
