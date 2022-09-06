@@ -4,30 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> html연습04 - 미디어 관련</title>
+    <title>html 연습05 - 테이블</title>
 </head>
 <body>
-    <div class="wrap">
-        <ul>
-            <li><img src="../html 저작권/animal-g9d5220660_1920.jpg" alt="냐옹이"></li>
-            <li><img src="../cat-gc708b829f_1920.jpg" alt="야옹이"></li>
-            <li><img src="../computer-g176159336_1920.jpg" alt="컴퓨터"></li>
-            <li><img src="../software-developer-g36745c9de_1920.jpg" alt="개발"></li>
-            <li><img src="../student-g528e61cc4_1920.jpg" alt="공부공부"></li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <li>
-                <video src="../html 저작권/BLACKPINK(블랙핑크) - Pink Venom @인기가요 inkigayo 20220828.mp4" poster="../cat-gc708b829f_1920" controls autoplay muted></video>
-            </li>
-            <li>
-                <video src=""></video>
-            </li>
-            <li>
-                <video src=""></video>
-            </li>
-        </ul>
+    <h2>테이블(표)</h2>
+    <div class="table_wrap">
+        <table border="1" cellspacing="0" cellpadding="8">
+            <caption>자바웹반 중간성적표</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>성명</th>
+                    <th>응용SW기초활용</th>
+                    <th>개발자환경구축</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td><td>박평화</td><td>100</td><td>95</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>아무개</td>
+                    <td>90</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>누구</td>
+                    <td>70</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>저기</td>
+                    <td>90</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>요기</td>
+                    <td>80</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>여기</td>
+                    <td colspan="2">40</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">합계</th><td rowspan="2">470</td><td rowspan="2">415</td>
+                </tr>
+                <tr><th colspan="2">집계</th></tr>
+            </tfoot>
+        </table>
     </div>
 </body>
 </html>
